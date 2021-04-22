@@ -1,0 +1,82 @@
+@import "fonts";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 18px;
+    font-family: "MavenPro";
+}
+
+a{
+    text-decoration: none;
+    color: #777777;
+}
+
+.centered{
+    width: 60vw;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header{
+    height: 2.5rem;
+    padding: 0.2rem 0;
+    width: 100%;
+    &-inner{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            width: 2.5rem;
+        }
+        .link{
+            margin-left: 5rem;
+        }
+    }
+}
+
+.main{
+    text-align: center;
+    padding: 10rem 0;
+    img{
+        width: 6rem;
+    }
+    h1{
+        font-family: "CodaCaption";
+        font-size: 5em;
+        color: #2e2e2e;
+    }
+    p{
+        opacity: 0.6;
+    }
+    &-buttons{
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        a{
+            width: 15rem;
+            padding: 1rem 0;
+            border-radius: 5px;
+            border: #2e2e2e solid 2px;
+            transition: 0.4s;
+            &:hover,&:focus {
+                box-shadow: inset 15em 0 0 0 wheat;
+            }
+        }
+    }
+}
+
+.footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    opacity: 0.4;
+    &-inner{
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+}
